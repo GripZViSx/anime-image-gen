@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+   width: 100vw;
+   height: 100vh;
+}
+body {
+   background: #090909;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   min-height: 100%;
+   position: relative;
+}
+
+header {
+   color: white;
+   margin: 6vh 0;
+   font-family: "Montserrat";
+   font-weight: 600;
+   font-size: 5vw;
+   text-align: center;
+}
+#image-container {
+   display: grid;
+   place-items: center;
+   border: 3px solid white;
+   border-radius: calc(1rem + 10px);
+   padding: 10px;
+   position: relative;
+}
+#image {
+   border-radius: 1rem;
+}
+
+.spoiler {
+   position: absolute;
+   width: 95%;
+   height: 95%;
+   color: white;
+   font-size: 2cqw;
+   font-family: "Montserrat";
+   background: #000000;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   border-radius: 1rem;
+   opacity: 0;
+   visibility: hidden;
+}
+
+#categorySet {
+   margin-top: 2vh;
+}
+.categoryName {
+   color: white;
+   font-family: "Montserrat";
+   font-weight: 600;
+}
+select {
+   border-radius: 5px;
+   background: transparent;
+   color: white;
+   font-family: "Montserrat";
+   padding: 2px;
+   border: 2px solid white;
+   font-weight: 200;
+}
+select:focus {
+   outline: none;
+}
+
+#button-holder {
+   margin: 2vh 0;
+   width: 90%;
+   height: 5vh;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.buttons {
+   width: 45%;
+   height: 100%;
+   background: linear-gradient(135deg, #AF00FF, #01AECC);
+   background-position: center;
+   background-size: 200%;
+   background-repeat: no-repeat;
+   border: 1px solid transparent;
+   border-radius: 80rem;
+   color: white;
+   font-size: 3cqw;
+   font-family: "Montserrat";
+   font-weight: 600;
+   transition: border ease 0.2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+.buttons:hover {
+   border: 1px solid white;
+}
+
+.spinner {
+   animation: spinner 0.5s linear 0s infinite;
+}
+@keyframes spinner {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.item-up {
+   animation: goUp linear 0.2s 0s forwards paused;
+}
+@keyframes goUp {
+   0% {
+      
+   }
+   100% {
+      transform: translateY(-80px);
+   }
+}
+@keyframes comeUp {
+   0% {
+      transform: translateY(80px);
+   }
+   100% {
+      transform: translateY(0px);
+   }
+}
+.item-come-up {
+   animation: linear 0.2s 0s forwards comeUp;
+}
+
+footer {
+   position: absolute;
+   bottom: 6px;
+   color: white;
+   font-size: 10px;
+   font-family: "Montserrat";
+   font-weight: 200;
+   width: 100%;
+   background: transparent;
+   backdrop-filter: blur(10px);
+   text-align: center;
+}
+footer a {
+   color: cyan;
+   text-decoration: none;
+}

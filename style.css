@@ -68,7 +68,7 @@ select {
    padding: 2px;
    border: 2px solid white;
    font-weight: 200;
-   font-size: 3cqw;
+   font-size: 4cqw;
 }
 select:focus {
    outline: none;

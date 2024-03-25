@@ -13,6 +13,7 @@ body {
    width: 100%;
    min-height: 100%;
    position: relative;
+   overflow-x: hidden;
 }
 
 header {
@@ -36,6 +37,7 @@ header {
    opacity: 1;
    transition: opacity ease 0.5s;
    background: #0c0c0c;
+   width: 90vw;
 }
 
 .spoiler {

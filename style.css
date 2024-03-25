@@ -58,7 +58,7 @@ header {
    color: white;
    font-family: "Montserrat";
    font-weight: 600;
-   font-size: 5cqw;
+   font-size: 3cqw;
 }
 select {
    border-radius: 5px;
@@ -68,6 +68,7 @@ select {
    padding: 2px;
    border: 2px solid white;
    font-weight: 200;
+   font-size: 3cqw;
 }
 select:focus {
    outline: none;

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
    let fetchurl = `https://api.waifu.pics/sfw/${category[Math.floor(Math.random() * category.length)]}`;
    await fetch(fetchurl).then((response) => response.json()).then((data) => {
       link = data.url;
-      document.querySelector("#image-container").innerHTML = `<img width="450" src="${link}" id="image" loading="lazy"/>`;
+      document.querySelector("#image-container").innerHTML = `<img width="450" src="${link}" id="image" loading="eager"/>`;
    })
 })
 gen.addEventListener("click", async function() {
@@ -30,7 +30,7 @@ gen.addEventListener("click", async function() {
    }
    await fetch(`https://api.waifu.pics/${fetchType}/${fetchCat}`).then((response) => response.json()).then((data) => {
       link = data.url;
-      document.querySelector("#image-container").innerHTML = `<img width="450" src="${link}" id="image" loading="lazy"/>`;
+      document.querySelector("#image-container").innerHTML = `<img width="450" src="${link}" id="image" loading="eager"/>`;
    }).catch(e => console.log(e));
 
    gen.innerHTML = `<div class="item-up"><svg xmlns="http://www.w3.org/2000/svg" style="scale: 1.2; transform: translateY(2px);" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M9 16.17L5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41z"/></svg></div>`;

@@ -82,7 +82,7 @@ select:focus {
 }
 
 .buttons {
-   width: 200px;
+   width: 45%;
    height: 100%;
    background: linear-gradient(135deg, #AF00FF, #01AECC);
    background-position: center;
